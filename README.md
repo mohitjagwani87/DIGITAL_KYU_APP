@@ -1,77 +1,236 @@
-# BuzzBlaze Services - Tax Compliance App
+# Digital KYC App
 
-## Overview
+A comprehensive Flutter-based Digital Know Your Customer (KYC) application that provides three distinct methods for identity verification: Digilocker KYC, Document-based KYC, and Face Authentication.
 
-BuzzBlaze Services is a comprehensive tax compliance and business services app that simplifies regulatory compliance for businesses in India. The app provides an intuitive interface for GST filing, registration, and various other compliance-related services.
+## 📱 Overview
 
-## Features
+This application simplifies the KYC verification process by offering multiple verification methods, making it accessible and convenient for users to complete their identity verification. The app follows a step-by-step guided process for each verification method, ensuring a smooth user experience.
 
-### 1. Tax Compliance
+## ✨ Features
 
-- **GST Services**
-  - Register businesses with auto-validated PAN/Aadhaar data
-  - File GST returns (GSTR-1, GSTR-3B, GSTR-9) with AI-driven invoice reconciliation
-  - Generate e-way bills using real-time logistics data
-  - Track compliance with automated reminders
+### 1. **Digilocker KYC**
+   - **Login with Digilocker**: Secure authentication using Digilocker credentials
+   - **Need Help Button**: Provides assistance and guidance
+   - **Consent Declaration**: User consent for document access
+   - **Document Selection**: Choose from available documents:
+     - Aadhaar Card
+     - PAN Card
+     - Driving License
+     - Voter ID
+   - **Next Steps**: Clear guidance on what happens after verification
 
-- **Income Tax Services**
-  - Apply for PAN/TAN and file ITRs for individuals and businesses
-  - Auto-fetch Form 26AS for TDS compliance
-  - Optimize tax savings with AI-suggested deductions
-  - Generate payment challans and track advance tax deadlines
+### 2. **Document-based KYC**
+   - **Document Selection**: Choose from multiple document types:
+     - Aadhaar Card
+     - PAN Card
+     - Driving License
+     - Voter ID
+     - Passport
+   - **Document Upload**: Upload documents with clear guidelines
+   - **Take Photo Button**: Capture document photos directly
+   - **Upload Success**: Confirmation after successful upload
+   - **KYC Email**: Automated email notifications upon successful verification
 
-### 2. Business Compliance
+### 3. **Face Authentication**
+   - **Camera Integration**: Open camera for face capture
+   - **Consent & Guidelines**: Clear instructions and consent declaration
+   - **Lighting Suggestions**: Tips for optimal lighting conditions
+   - **Verification Successful**: Confirmation upon successful face verification
 
-- **ROC Services**
-  - Register companies with Digital Signature Certificate integration
-  - File annual returns using auto-compiled financial data
-  - Apply for Director Identification Numbers (DIN)
+## 🏗️ Architecture
 
-- **DGFT Services**
-  - Secure Import Export Code (IEC) with instant verification
-  - Apply for export incentives and file trade returns
+The app follows a clean architecture pattern with:
 
-### 3. Trade & Intellectual Property
+- **UI Layer**: Flutter widgets organized by feature
+- **Core Services**: Business logic and API integrations
+- **Widget Components**: Reusable UI components
+- **State Management**: Riverpod for state management
 
-- **Customs Services**
-  - Calculate duties using HS codes and trade agreements
-  - File shipping bills and bills of entry with pre-filled data
-  - Offer advisory on customs regulations
+### Project Structure
 
-- **IP Services**
-  - Conduct AI-powered trademark searches and file registrations
-  - Support copyright and patent applications
-  - Provide IP protection guidance via empaneled experts
+```
+lib/
+├── core/
+│   ├── const.dart                    # Constants
+│   └── services/
+│       ├── deep_link_handler.dart     # Deep link handling
+│       ├── digilocker_service.dart    # Digilocker integration
+│       └── gstn_verification_service.dart
+├── ui/
+│   ├── home_screen.dart              # Main home screen
+│   ├── kyc/
+│   │   ├── digilocker_kyc.dart      # Digilocker KYC flow
+│   │   ├── document_kyc.dart        # Document-based KYC flow
+│   │   └── face_authentication.dart  # Face authentication flow
+│   ├── onboarding.dart
+│   ├── register_page.dart
+│   ├── register_otppage.dart
+│   └── verification_done.dart
+├── widget/
+│   ├── app_buttons.dart
+│   ├── app_cards.dart
+│   ├── app_form_fields.dart
+│   ├── app_layouts.dart
+│   ├── app_themes.dart
+│   ├── comman.dart
+│   └── service_app_bar.dart
+└── main.dart                         # App entry point
+```
 
-### 4. AI-Powered Tools
+## 🚀 Getting Started
 
-- **Compliance Assistant**: A multilingual chatbot answering compliance queries in real-time
-- **Smart Analytics**: Predict compliance risks and deliver regulatory updates
-- **Document Automation**: Extract data from invoices and balance sheets using OCR for error-free filings
+### Prerequisites
 
-## Technical Implementation
+- Flutter SDK (3.7.0 or higher)
+- Dart SDK
+- Android Studio / Xcode (for mobile development)
+- Firebase account (for authentication and backend services)
 
-- **Tab-Based Navigation**: Each major category has its own tab with sub-sections
-- **GST Filing Interface**: Separate tabs for different GST return types (GSTR-1, GSTR-3B, GSTR-9)
-- **Coming Soon Pages**: Placeholder for features under development
-- **Responsive Design**: Works across various screen sizes
+### Installation
 
-## Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mohitjagwani87/DIGITAL_KYU_APP.git
+   cd DIGITAL_KYU_APP/kycapp/kycapp
+   ```
 
-1. Clone the repository
-2. Install Flutter dependencies: `flutter pub get`
-3. Run the app: `flutter run`
+2. **Install dependencies**
+   ```bash
+   flutter pub get
+   ```
 
-## Dependencies
+3. **Configure Firebase**
+   - Set up Firebase project at [Firebase Console](https://console.firebase.google.com/)
+   - Download `google-services.json` for Android
+   - Place it in `android/app/` directory
+   - For iOS, download `GoogleService-Info.plist` and add it to `ios/Runner/`
 
-- Flutter SDK
-- Firebase for authentication and backend
+4. **Run the app**
+   ```bash
+   flutter run
+   ```
+
+## 📦 Dependencies
+
+### Core Dependencies
+- `flutter_riverpod: ^2.6.1` - State management
+- `firebase_core: ^3.12.1` - Firebase integration
+- `firebase_auth: ^5.5.1` - Authentication
+- `google_fonts: ^6.2.1` - Typography
+- `file_picker: 10.0.0` - File selection
+- `http: ^1.1.0` - HTTP requests
+- `url_launcher: ^6.1.11` - URL launching
+- `app_links: ^3.5.0` - Deep linking
+- `shared_preferences: ^2.2.0` - Local storage
+- `pinput: ^5.0.1` - PIN input widget
+
+## 🔄 KYC Flows
+
+### Digilocker KYC Flow
+1. **Authentication Page**: Login with Digilocker credentials
+2. **Consent Page**: Provide consent for document access
+3. **Document Selection**: Choose document type
+4. **Verification Result**: View verification status
+
+### Document-based KYC Flow
+1. **Document Selection**: Choose document type
+2. **Upload Page**: Upload document with guidelines
+3. **Verification Page**: Document verification process
+4. **Result Page**: Success confirmation with email notification
+
+### Face Authentication Flow
+1. **Consent Page**: Provide consent for face capture
+2. **Guidelines Page**: Instructions for face capture
+3. **Capture Page**: Face capture using camera
+4. **Verification Result**: Verification status
+
+## 🎨 UI/UX Features
+
+- **Material Design 3**: Modern UI following Material Design guidelines
+- **Google Fonts (Poppins)**: Consistent typography throughout the app
+- **Step-by-step Navigation**: Clear progress indicators
+- **Responsive Design**: Works across different screen sizes
+- **Loading States**: Visual feedback during async operations
+- **Error Handling**: User-friendly error messages
+
+## 🔐 Security Features
+
+- **Firebase Authentication**: Secure user authentication
+- **Consent Management**: Explicit user consent for data processing
+- **Secure Data Storage**: Encrypted data storage
+- **Privacy Compliance**: Adherence to data protection regulations
+
+## 🛠️ Development
+
+### Building for Production
+
+**Android:**
+```bash
+flutter build apk --release
+# or
+flutter build appbundle --release
+```
+
+**iOS:**
+```bash
+flutter build ios --release
+```
+
+**Web:**
+```bash
+flutter build web --release
+```
+
+### Running Tests
+```bash
+flutter test
+```
+
+## 📱 Platform Support
+
+- ✅ Android
+- ✅ iOS
+- ✅ Web
+- ✅ Windows
+- ✅ macOS
+- ✅ Linux
+
+## 🔮 Future Enhancements
+
+- [ ] Real Digilocker API integration
+- [ ] OCR for document extraction
+- [ ] Biometric authentication
+- [ ] Multi-language support
+- [ ] Offline mode support
+- [ ] Advanced analytics dashboard
+- [ ] Document verification API integration
+- [ ] Face recognition SDK integration
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+For support, email support@example.com or open an issue in the repository.
+
+## 🙏 Acknowledgments
+
+- Flutter team for the amazing framework
+- Firebase for backend services
 - Google Fonts for typography
-- File Picker for document uploads
+- All contributors and open-source libraries used in this project
 
-## Future Enhancements
+---
 
-- Integration with government APIs for real-time data validation
-- Machine learning for document processing
-- Enhanced analytics dashboard for business insights
-- Mobile-specific optimizations for field operations
+**Made with ❤️ using Flutter**
