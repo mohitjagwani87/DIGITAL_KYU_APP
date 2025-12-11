@@ -6,7 +6,7 @@ A comprehensive Flutter-based Digital Know Your Customer (KYC) application that 
 
 This application simplifies the KYC verification process by offering multiple verification methods, making it accessible and convenient for users to complete their identity verification. The app follows a step-by-step guided process for each verification method, ensuring a smooth user experience.
 
-## ✨ Features
+## Features
 
 ### 1. **Digilocker KYC**
    - **Login with Digilocker**: Secure authentication using Digilocker credentials
@@ -131,6 +131,11 @@ lib/
 2. **Consent Page**: Provide consent for document access
 3. **Document Selection**: Choose document type
 4. **Verification Result**: View verification status
+![WhatsApp Image 2025-12-12 at 00 38 59_422bdf24](https://github.com/user-attachments/assets/06acbd76-65e6-4e7f-a3f8-38ae4a8e3f81)
+![WhatsApp Image 2025-12-12 at 00 38 59_d457b4bc](https://github.com/user-attachments/assets/7c480c28-a700-49ee-a1a6-4ddb9d399c68)
+![WhatsApp Image 2025-12-12 at 00 38 58_b93688f8](https://github.com/user-attachments/assets/e7768314-ac92-4f40-a594-39a5023d5e22)
+
+
 
 ### Document-based KYC Flow
 1. **Document Selection**: Choose document type
