@@ -131,9 +131,11 @@ lib/
 2. **Consent Page**: Provide consent for document access
 3. **Document Selection**: Choose document type
 4. **Verification Result**: View verification status
+   
 ![WhatsApp Image 2025-12-12 at 00 38 59_422bdf24](https://github.com/user-attachments/assets/06acbd76-65e6-4e7f-a3f8-38ae4a8e3f81)
 ![WhatsApp Image 2025-12-12 at 00 38 59_d457b4bc](https://github.com/user-attachments/assets/7c480c28-a700-49ee-a1a6-4ddb9d399c68)
 ![WhatsApp Image 2025-12-12 at 00 38 58_b93688f8](https://github.com/user-attachments/assets/e7768314-ac92-4f40-a594-39a5023d5e22)
+![WhatsApp Image 2025-12-12 at 00 38 58_cdd58368](https://github.com/user-attachments/assets/e2662577-3d34-4ef2-bd09-e8674a3ea5e8)
 
 
 
@@ -142,12 +144,27 @@ lib/
 2. **Upload Page**: Upload document with guidelines
 3. **Verification Page**: Document verification process
 4. **Result Page**: Success confirmation with email notification
+   
+![WhatsApp Image 2025-12-12 at 00 38 57_a99834b8](https://github.com/user-attachments/assets/379e573d-01b1-40fb-bce6-858ce8906028)
+![WhatsApp Image 2025-12-12 at 00 38 57_19b270fb](https://github.com/user-attachments/assets/373ff1c2-d202-4abc-ae29-4c032a309907)
+![WhatsApp Image 2025-12-12 at 00 38 56_1ef010d5](https://github.com/user-attachments/assets/533bd1f7-ef84-4f73-ab08-0434ea6a7b73)
+![WhatsApp Image 2025-12-12 at 00 38 56_2eb1db6f](https://github.com/user-attachments/assets/2d69daad-e0ce-45ce-bec1-719a8d9d58bb)
+
+
+
+
 
 ### Face Authentication Flow
 1. **Consent Page**: Provide consent for face capture
 2. **Guidelines Page**: Instructions for face capture
 3. **Capture Page**: Face capture using camera
 4. **Verification Result**: Verification status
+
+![WhatsApp Image 2025-12-12 at 00 38 56_1f2f4268](https://github.com/user-attachments/assets/1816ef85-d99a-49c6-8325-0aacc9222b6d)
+![WhatsApp Image 2025-12-12 at 00 38 55_1c1b780c](https://github.com/user-attachments/assets/883c9893-1ebb-4740-a220-eab4c0a722ac)
+![WhatsApp Image 2025-12-12 at 00 38 55_7562b4c0](https://github.com/user-attachments/assets/170fe2fa-bbb5-410f-a0e6-4b3eaf76db38)
+![WhatsApp Image 2025-12-12 at 00 38 54_72eab6d0](https://github.com/user-attachments/assets/e5c74663-acde-4703-804c-4e245d4635df)
+
 
 ## 🎨 UI/UX Features
 
