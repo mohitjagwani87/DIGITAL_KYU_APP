@@ -242,10 +242,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📞 Support
-
-For support, email support@example.com or open an issue in the repository.
-
 ## 🙏 Acknowledgments
 
 - Flutter team for the amazing framework
@@ -253,6 +249,3 @@ For support, email support@example.com or open an issue in the repository.
 - Google Fonts for typography
 - All contributors and open-source libraries used in this project
 
----
-
-**Made with ❤️ using Flutter**
